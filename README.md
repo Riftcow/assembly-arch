@@ -3,7 +3,7 @@
 <p align="center">
   <b>Complete toolkit for 16-bit Assembly Programming</b><br>
   Includes NASM tools, sample programs, tasks, macros, and utilities.
-   
+   Recluze (Dr Nouman) Mentor
 </p>
 
 <p align="center">
