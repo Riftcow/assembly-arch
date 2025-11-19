@@ -1,0 +1,21 @@
+     1                                  [org 0x100]
+     2                                  
+     3 00000000 A1[1800]                mov ax, [num1]      ;13
+     4 00000003 8B1E[1A00]              mov bx, [num2]      ;0b
+     5                                  
+     6 00000007 01D8                    add ax , bx         ; ax <--13+0B
+     7                                  
+     8 00000009 8B1E[1C00]              mov bx, [num3]      ;
+     9                                  
+    10 0000000D 01D8                    add ax,bx
+    11                                  
+    12 0000000F 891E[1E00]              mov [num4], bx
+    13                                  
+    14 00000013 B8004C                  mov ax,0x4c00
+    15 00000016 CD21                    int 0x21
+    16                                  
+    17                                              ;   defining a word size of 2  or
+    18 00000018 0500                    num1 : dw 5
+    19 0000001A 0A00                    num2 : dw 10
+    20 0000001C 0F00                    num3 : dw 15
+    21 0000001E 0000                    num4 : dw 0
